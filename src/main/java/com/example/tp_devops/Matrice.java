@@ -48,6 +48,10 @@ public class Matrice {
         System.out.println("===============================================================================");
     }
 
+    public Matrice(String s){
+
+    }
+
     public boolean checkType(){
         int i,j;
         for(i=1;i<=this.taille;i++){
@@ -71,5 +75,9 @@ public class Matrice {
 
     public float[][] getElement() {
         return element;
+    }
+
+    public void setElement(float[][] element) {
+        this.element = element;
     }
 }
