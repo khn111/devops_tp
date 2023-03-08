@@ -7,7 +7,7 @@
 # documentation.
 
 name: Java CI with Maven
-timeout-minutes: 10
+#timeout-minutes: 10
 
 on:
   push:
