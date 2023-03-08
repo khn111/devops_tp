@@ -8,6 +8,8 @@
 
 name: Java CI with Maven
 
+runs_on_time: 5
+
 on:
   push:
     branches: [ "master" ]
