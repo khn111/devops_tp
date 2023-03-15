@@ -18,6 +18,7 @@ public class SystemeLineaire {
         float matrice[][] = m.getElement();
         float vecteur[] = v.getElement();
 
+        //calcul du systeme linéaire
         if(type==1){
             this.solutions[t]=vecteur[t]/matrice[t][t];
             System.out.println("x"+t+" = "+this.solutions[t]);

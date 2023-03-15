@@ -48,8 +48,24 @@ public class Matrice {
         System.out.println("===============================================================================");
     }
 
+    //constructeur qui ne fait rien, utilisé dans les tests unitaires
     public Matrice(String s){
 
+    }
+
+    public boolean checkSign(){
+        int i,j;
+        for(i=1;i<=this.taille;i++){
+            for(j=1;j<=this.taille;j++){
+                if(i<j){
+                    continue;
+                }
+                else if(i>=j && element[i][j]<0){
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
     public boolean checkType(){
